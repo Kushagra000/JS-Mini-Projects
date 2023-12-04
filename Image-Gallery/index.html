@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -35,3 +36,42 @@
     </script>
   </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Image Gallery</title>
+  </head>
+  <body>
+    <div class="gallery_wrap">
+      <img src="./images/back.png" id="back_btn" alt="" />
+      <div class="gallery">
+        <div>
+          <span><img src="./images/image-1.png" alt="" /></span>
+          <span><img src="./images/image-2.png" alt="" /></span>
+          <span><img src="./images/image-3.png" alt="" /></span>
+        </div>
+        <div>
+          <span><img src="./images/image-4.png" alt="" /></span>
+          <span><img src="./images/image-5.png" alt="" /></span>
+          <span><img src="./images/image-6.png" alt="" /></span>
+        </div>
+      </div>
+      <img src="./images/next.png" id="next_btn" alt="" />
+    </div>
+    <script>
+      let scrollContainer = document.querySelector("gallery");
+      let back_btn = document.getElementById("back_btn");
+      let next_btn = document.getElementById("next_btn");
+
+      scrollContainer.addEventListener("wheel", (evt) => {
+        evt.preventDefault();
+        scrollContainer.scrollLeft += evt.deltaY;
+      });
+    </script>
+  </body>
+</html>
+>>>>>>> 00a15ff491bf1af4f2d1db7f664d1413ca2de93a
